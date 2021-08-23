@@ -3,75 +3,88 @@
 var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do, YYYY"));
 
-//variable per time slot
-var hour9 = $('#hour9');
-var hour10 = $('#hour10');
-var hour11 = $('#hour11');
-var hour12 = $('#hour12');
-var hour13 = $('#hour1');
-var hour14 = $('#hour2');
-var hour15 = $('#hour3');
-var hour16 = $('#hour4');
-var hour17 = $('#hour5');
-var currentHour = moment().format("HH");
-console.log(currentHour);
+var timeBlocks = moment().format("k");
+console.log(timeBlocks);
 
-
-// outline color of time slots as web page opens
-var text9AM = $('#text9am');
-var text10AM = $('#text10am');
-var text11AM = $('#text11am');
-var text12PM = $('#text12pm');
-var text1PM = $('#text1pm');
-var text2PM = $('#text2pm');
-var text3PM = $('#text3pm');
-var text4PM = $('#text4pm');
-var text5PM = $('#text5pm');
-
-var saveBtn = $(".saveBtn");
-
-//button clicks, local storage
-
-saveBtn.on("click", function() {
-    localStorage.setItem("9AM",(text9AM.val()));
-    localStorage.setItem("10AM",(text10AM.val()));
-    localStorage.setItem("11AM",(text11AM.val()));
-    localStorage.setItem("12AM",(text12PM.val()));
-    localStorage.setItem("1PM",(text1PM.val()));
-    localStorage.setItem("2PM",(text2PM.val()));
-    localStorage.setItem("3PM",(text3PM.val()));
-    localStorage.setItem("4PM",(text4PM.val()));
-    localStorage.setItem("5PM",(text5PM.val()));
-});
-
-//append to web page
-
-$('#text9am').append(localStorage).getItem("9AM");
-$('#text10am').append(localStorage).getItem("10AM");
-$('#text11am').append(localStorage).getItem("11AM");
-$('#text12pm').append(localStorage).getItem("12AM");
-$('#text1pm').append(localStorage).getItem("1PM");
-$('#text2pm').append(localStorage).getItem("2PM");
-$('#text3pm').append(localStorage).getItem("3PM");
-$('#text4pm').append(localStorage).getItem("4PM");
-$('#text5pm').append(localStorage).getItem("5PM");
-
-// color cordinate all the inputs with the time
-
-function allOptions() {
-    $(".time-block").each(function () {
-        var hourByHour = parseInt($(this).attr("id"));
-
-        if (hourByHour > currentHour) {
-            $(this).addClass("future")
-        }
-        else  if (hourByHour === currentHour) {
-                $(this).addClass("present");
-        }
-        else {
-            $(this).addClass("past");
-        }
-    })
+var text_El9AM = $('#text9am');
+if (timeBlocks > 9 ) {
+    text_El9AM.addClass('past');
+} else if (text_El9AM === 9 ) {
+    text_El9AM.addClass('present');
+} else if (timeBlocks < 9){
+    text_El9AM.addClass('future');
 }
 
-allOptions();
+console.log(text_El9AM)
+
+var text_El10AM = $('#text10am');
+if (timeBlocks > 10 ) {
+    text_El10AM.addClass('past');
+} else if (text_El10AM === 10) {
+    text_El9AM.addClass('present');
+} else  if (timeBlocks < 10) {
+    text_El10AM.addClass('future');
+}
+
+var text_El11AM = $('#text11am');
+if (timeBlocks > 11) {
+    text_El11AM.addClass('past');
+} else if (text_El11AM === 11) {
+    text_El11AM.addClass('present');
+} else  if (timeBlocks < 11) {
+    text_El11AM.addClass('future');
+}
+
+var text_El12PM = $('#text12pm');
+if (timeBlocks > 12 ) {
+    text_El12PM.addClass('past');
+} else if (text_El12PM === 12 ) {
+    text_El12PM.addClass('present');
+} else  if (timeBlocks < 12) {
+    text_El12PM.addClass('future');
+}
+
+var text_El1PM = $('#text1pm');
+if (timeBlocks > 13 ) {
+    text_El1PM.addClass('past');
+} else if (text_El1PM === 13) {
+    text_El1PM.addClass('present');
+} else  if (timeBlocks < 13) {
+    text_El1PM.addClass('future');
+}
+
+var text_El2PM = $('#text2pm');
+if (timeBlocks > 14 ) {
+    text_El2PM.addClass('past');
+} else if (text_El2PM === 14 ) {
+    text_El2PM.addClass('present');
+} else  if (timeBlocks < 14) {
+    text_El2PM.addClass('future');
+}
+
+var text_El3PM = $('#text3pm');
+if (timeBlocks > 15 ) {
+    text_El3PM.addClass('past');
+} else if (text_El3PM === 15 ) {
+    text_El3PM.addClass('present');
+} else  if (timeBlocks < 15) {
+    text_El3PM.addClass('future');
+}
+
+var text_El4PM = $('#text4pm');
+if (timeBlocks > 16 ) {
+    text_El4PM.addClass('past');
+} else if (text_El4PM === 16 ) {
+    text_El4PM.addClass('present');
+} else  if (timeBlocks < 16) {
+    text_El4PM.addClass('future');
+}
+
+var text_El5PM = $('#text5pm');
+if (timeBlocks > 17 ) {
+    text_El5PM.addClass('past');
+} else if (text_El5PM === 17 ) {
+    text_El5PM.addClass('present');
+} else  if (timeBlocks < 17) {
+    text_El5PM.addClass('future');
+}
