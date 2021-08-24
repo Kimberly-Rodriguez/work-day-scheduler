@@ -64,7 +64,7 @@ body {
   
   .present {
     background-color: #ff6961;
-    color: white;
+    color: hsla(0, 100%, 77%, 1);
   }
   
   .future {
