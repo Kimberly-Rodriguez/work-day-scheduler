@@ -15,18 +15,7 @@ To stay organized and manage time effectively this applicatoin will help delieve
 
 The following images demonstrates the application functionality:
 
+ !["screen shot 1 of website showing all inputs"](./images/screenShot01.png)
+ !["screen shot 1 of website showing all inputs on the console"](./images/screenShot02.png)
 
-
-
-
-
-
-WHEN I click into a timeblock
-THEN I can enter an event
-
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-
-WHEN I refresh the page
-THEN the saved events persist
 

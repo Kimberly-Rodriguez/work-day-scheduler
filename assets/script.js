@@ -3,6 +3,15 @@
 var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do, YYYY"));
 
+var nineS = $('#text9am');
+var tenS = $('#text10am');
+var elevenS = $('#text11am');
+var twelveS = $('#text12pm');
+var oneS = $('#text1pm');
+var twoS = $('#text2pm');
+var threeS = $('#text3pm');
+var fourS = $('#text4pm');
+var fiveS = $('#text5pm'); 
 
 var buttonElSaveBtns = $(".saveBtn");
 
@@ -107,16 +116,96 @@ if (text_El5PM === 17 ) {
     text_El5PM.addClass('present');
 } if (timeBlocks < 17) {
     text_El5PM.addClass('future');
-}
+} 
 
 
 buttonElSaveBtns.on("click", jquerySaveBtn);
 
 function jquerySaveBtn() {
     localStorage.setItem($(this).siblings()[1].id, $(this).siblings()[1].value)
+console.log(buttonElSaveBtns);
+
 }
 
+// taking it out of local storage and adding it to text area
+function ninePrint() {
+    var nineKey = localStorage.getItem('text9am');
+    console.log(nineKey)
+    nineS.text(nineKey);
+    
+}
 
+ninePrint();
+
+function tenPrint() {
+    var tenKey = localStorage.getItem('text10am');
+    console.log(tenKey)
+    tenS.text(tenKey);
+    
+}
+
+tenPrint();
+
+
+function elevenPrint() {
+    var elevenKey = localStorage.getItem('text11am');
+    console.log(elevenKey)
+    elevenS.text(elevenKey);
+}
+
+elevenPrint();
+
+
+function twelvePrint() {
+    var twelveKey = localStorage.getItem('text12pm');
+    console.log(twelveKey)
+    twelveS.text(twelveKey);
+}
+
+twelvePrint();
+
+
+function onePrint() {
+    var oneKey = localStorage.getItem('text1pm');
+    console.log(oneKey)
+    oneS.text(oneKey);
+}
+
+onePrint();
+
+function twoPrint() {
+    var twoKey = localStorage.getItem('text2pm');
+    console.log(twoKey)
+    twoS.text(twoKey);
+}
+
+twoPrint();
+
+
+function threePrint() {
+    var threeKey = localStorage.getItem('text3pm');
+    console.log(threeKey)
+    threeS.text(threeKey);
+}
+
+threePrint();
+
+
+function fourPrint() {
+    var fourKey = localStorage.getItem('text4pm');
+    console.log(fourKey)
+    fourS.text(fourKey);
+}
+
+fourPrint();
+
+function fivePrint() {
+    var fiveKey = localStorage.getItem('text5pm');
+    console.log(fiveKey)
+    fiveS.text(fiveKey);
+}
+
+fivePrint();
 
 
 
