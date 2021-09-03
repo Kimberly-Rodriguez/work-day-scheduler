@@ -1,8 +1,22 @@
 # Work Day Scheduler
 
-To generate a calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature HTML and CSS powered by jQuery.
+# Table of Contents
 
-This application uses the Moment.js library to modify the date and time. 
+* [Description](#description)
+* [Instalation](#instalation)
+* [Usage](#usage)
+* [Tools](#tools)
+* [Contact](#contact)
+* [License](#license)
+* [Acknowledgements](#acknowledgements)
+
+## Description 
+To generate a calendar application that allows users to save events for each hour of the day and also add tasks. 
+
+## Instalation:
+For installation and deployment, please [click here](https://kimberly-rodriguez.github.io/work-day-scheduler/). The GitHub link is [here](https://github.com/Kimberly-Rodriguez/work-day-scheduler)
+
+## Usage
 
 To stay organized and manage time effectively this applicatoin will help deliever the following fuctions:
  - Add important events to a daily planner
@@ -16,6 +30,27 @@ To stay organized and manage time effectively this applicatoin will help delieve
 The following images demonstrates the application functionality:
 
  !["screen shot 1 of website showing all inputs"](./images/screenShot01.png)
- !["screen shot 1 of website showing all inputs on the console"](./images/screenShot02.png)
+
+
+## Tools
+
+* This app will run in the browser and feature HTML and CSS powered by jQuery.
+
+* This application uses the Moment.js library to modify the date and time. 
+
+
+
+## Contact
+
+If you have any question about my work or wish to collaborate in the future please contact me at: <krodriguez.ucla@gmail.com>
+
+## License 
+
+Licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+[UCLA Extension Coding Bootcamp](https://bootcamp.uclaextension.edu/coding/)
+
+
 
 
