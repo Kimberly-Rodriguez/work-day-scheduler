@@ -3,7 +3,7 @@
 # Table of Contents
 
 * [Description](#description)
-* [Instalation](#instalation)
+* [Installation](#instalation)
 * [Usage](#usage)
 * [Tools](#tools)
 * [Contact](#contact)
@@ -13,7 +13,7 @@
 ## Description 
 To generate a calendar application that allows users to save events for each hour of the day and also add tasks. 
 
-## Instalation
+## Installation
 For installation and deployment, please [click here](https://kimberly-rodriguez.github.io/work-day-scheduler/). The GitHub link is [here](https://github.com/Kimberly-Rodriguez/work-day-scheduler)
 
 ## Usage
