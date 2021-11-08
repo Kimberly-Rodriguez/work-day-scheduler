@@ -1,7 +1,6 @@
 # Work Day Scheduler
 
 # Table of Contents
-
 * [Description](#description)
 * [Installation](#instalation)
 * [Usage](#usage)
@@ -17,7 +16,6 @@ To generate a calendar application that allows users to save events for each hou
 For installation and deployment, please [click here](https://kimberly-rodriguez.github.io/work-day-scheduler/). The GitHub link is [here](https://github.com/Kimberly-Rodriguez/work-day-scheduler)
 
 ## Usage
-
 To stay organized and manage time effectively this applicatoin will help deliever the following fuctions:
  - Add important events to a daily planner
  - Acceptance Criteria
@@ -33,7 +31,6 @@ The following images demonstrates the application functionality:
 
 
 ## Tools
-
 * This app will run in the browser and feature HTML and CSS powered by jQuery.
 
 * This application uses the Moment.js library to modify the date and time. 
@@ -41,11 +38,9 @@ The following images demonstrates the application functionality:
 
 
 ## Contact
-
 If you have any question about my work or wish to collaborate in the future please contact me at: <krodriguez.ucla@gmail.com>
 
 ## License 
-
 Licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
