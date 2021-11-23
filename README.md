@@ -20,7 +20,7 @@ To stay organized and manage time effectively this applicatoin will help delieve
  - Add important events to a daily planner
  - Acceptance Criteria
  - As the planner opens then the current day is displayed at the top of the calendar
- - Scrolling down presentes the user with timeblocks for standard business hours
+ - Scrolling down presents the user with timeblocks for standard business hours
  - As the timeblock displays on the webpage that day then each timeblock is color coded to indicate whether it is in the past, present, or future
  - As the event is entered it is saved by a saved button for that timeblock then the text for that event is saved in local storage
  - And when the page is refreshed then the saved events persist
